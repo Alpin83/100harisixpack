@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+main {
+  padding: 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.day-selector {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+select {
+  padding: 8px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 300px;
+}
+
+.exercise {
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.exercise h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+}
+
+.stopwatch {
+  margin-top: 10px;
+}
+
+button {
+  margin: 5px 5px 0 0;
+  padding: 8px 14px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ecf0f1;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .exercise h3 {
+    font-size: 1em;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+}
