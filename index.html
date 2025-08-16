@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sixpack dalam 100 Hari</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sixpack dalam 100 Hari</h1>
+    <p>Latihan harian untuk membentuk otot perut 💪</p>
+  </header>
+
+  <main>
+    <section class="day-selector">
+      <label for="day">Pilih Hari:</label>
+      <select id="day" onchange="loadDay()">
+        <script>
+          for (let i = 1; i <= 100; i++) {
+            document.write(`<option value="${i}">Hari ke-${i}</option>`);
+          }
+        </script>
+      </select>
+    </section>
+
+    <audio id="alarm-audio" src="alarmdog.mp3" preload="auto"></audio>
+
+    <section id="exercise-container">
+      <!-- Latihan akan dimuat di sini -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sixpack100Hari</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
